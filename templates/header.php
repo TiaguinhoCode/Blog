@@ -1,32 +1,34 @@
 <?php
-    // Importa meu helpers
+// Importa meu helpers
 include_once("helpers/url.php");
+// Incluindo dados
+include_once("data/posts.php");
+include_once("data/categoria.php");
 ?>
 
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog Codar</title>
-    <link rel="stylesheet" href="<?= $BASE_URL?>/css/styles.css">
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400&family=Montserrat:wght@300;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog Codar</title>
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap" rel="stylesheet">
+  <!-- CSS Aplicação -->
+  <link rel="stylesheet" href="<?= $BASE_URL ?>/css/styles.css">
 </head>
 <body>
-    <header>
-        <a href="<?= $BASE_URL ?>" id="logo">
-            <img src="<?= $BASE_URL ?>/img/logo.svg" alt="Blog Codar">
-        </a>
-        <nav>
-            <ul id="navbar">
-                <li><a href="<?= $BASE_URL ?>">Home</a></li>
-                <li><a href="#">Categorias</a></li>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="<?= $BASE_URL ?>contato.php">contato</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header>
+    <a href="<?= $BASE_URL ?>" id="logo">
+      <img src="<?= $BASE_URL ?>/img/logo.svg" alt="Blog Codar">
+    </a>
+    <nav>
+      <ul id="navbar">
+        <li><a href="index.php" class="nav-link">Home</a></li>
+        <li><a href="#" class="nav-link">Categorias</a></li>
+        <li><a href="#" class="nav-link">Sobre</a></li>
+        <li><a href="contact.php" class="nav-link">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
